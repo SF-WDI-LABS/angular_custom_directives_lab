@@ -54,7 +54,7 @@ function currentWeather() {
     controller: ['$scope', '$http',
       function (vm, $http) {
         var url = "http://api.openweathermap.org/data/2.5/weather?mode=json&cnt=7&units=imperial&callback=JSON_CALLBACK&q=";
-        // ask Justin for an API key or go to openweathermap.org to acquire your own!
+        // Go to openweathermap.org to acquire your own API key!
         var apiKey = "&APPID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
         vm.getWeather = function(city) {
